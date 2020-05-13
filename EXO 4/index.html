@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <script>
+            var note = prompt ('Met une note'); 
+            var message = 'Ceci n\'est pas une note !'; 
+            if ((note >= 0) && (note < 4)) {
+                message = 'Nul';
+            }else if ((note >= 4) && (note <= 6)) {
+                message = 'Moyen';
+            }else if ((note > 6) && (note < 8)) {
+                message = 'Assez bien';
+            }else if ((note >= 8) && (note < 10)) {
+                message = 'Bien';
+            }else if (note == 10) {
+                message = 'Excellent';
+            }
+            alert(message);          
+        </script>
+    </body>
+</html>
